@@ -1,0 +1,3 @@
+const apiLink = 'https://api.covid19api.com/country/';
+final dateStart = DateTime(2020, 01,
+    22); // linkteki verilerin başladığı tarih. Veriler, bu tarihten itibaren 0,1,2..n şeklinde objelere yerleştirilmiş. Güncel tarihten bu tarih düşüldüğünde aradaki gün sayısı farkından istenen verilere ulaşılabiliyor. Verilerin ne sıklıkla güncellendiğini takip etmediğim için güncel verileri almakta sıkıntı yaşabilir. Böyle bir durumda main.dart dosyasındaki difference değişkenini linkteki son değere eşitleyerek en son rakamlar görüntülenebilir. Veya belli bir tarih aralığındaki verileri çekmek için uygulama güncellenebilir.
