@@ -144,17 +144,17 @@ class _MyAppState extends State<MyApp> {
                                   .show();
                             }
                             confirmed =
-                                jsonDecode(response.body)[difference - 2]
+                                jsonDecode(response.body)[difference - 1]
                                     ['Confirmed'];
 
-                            deaths = jsonDecode(response.body)[difference - 2]
+                            deaths = jsonDecode(response.body)[difference - 1]
                                 ['Deaths'];
                             recovered =
-                                jsonDecode(response.body)[difference - 2]
+                                jsonDecode(response.body)[difference - 1]
                                     ['Recovered'];
-                            active = jsonDecode(response.body)[difference - 2]
+                            active = jsonDecode(response.body)[difference - 1]
                                 ['Active'];
-                            date = jsonDecode(response.body)[difference - 2]
+                            date = jsonDecode(response.body)[difference - 1]
                                 ['Date'];
                             day = DateTime.parse(date).day;
                             month = DateTime.parse(date).month;
